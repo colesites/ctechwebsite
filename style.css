@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: electricKick;
+    src: url(ElectricKicks-mL0Jx.ttf);
+}
+
+@font-face {
+    font-family: astroSpace;
+    src: url(AstroSpace-eZ2Bg.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: black;
+    color: white;
+    font-family: "poppins";
+    font-style: normal;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* c-tech logo */
+
+.logo {
+    width: 50px;
+    height: 50px;
+    transform: scale(0.7);
+}
+
+/* Header */
+
+/* Website heading C Tech */
+.c-tech-header {
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(47, 47, 255);
+    font-family: electricKick;
+    font-weight: 600px;
+    font-size: 4rem;
+    letter-spacing:8px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px);
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Header nav bar */
+header nav {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a, .link {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-family: astroSpace;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+
+header nav .link.active:first-child {
+    background-image: linear-gradient(to right, rgb(47, 47, 255), rgb(17, 2, 103));
+    border-radius: 20px;
+}
+
+header nav .link.active:nth-child(2) {
+    background-image: linear-gradient(to right, rgb(222, 46, 69), rgb(170, 9, 36));
+    border-radius: 20px;
+}
+
+header nav .link.active:nth-child(3) {
+    background-image: linear-gradient(to right, rgb(222, 48, 0), rgb(137, 34, 5));
+    border-radius: 20px;
+}
+
+header nav .link.active:nth-child(4) {
+    background-image: linear-gradient(to right, rgb(185, 10, 185), rgb(91, 3, 91));
+    border-radius: 20px;
+}
+
+header nav .link.active:nth-child(5) {
+    background-image: linear-gradient(to right, rgb(16, 124, 247), rgb(6, 64, 108));
+    border-radius: 20px;
+}
+
+/* Main */
+
+/* Sections */
+.Learn, .Services, .About, .Team, .Contact {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 20rem 0;
+    text-align: center;
+    top: 0;
+    opacity: 0;
+    transition: transform 800ms ease-in-out 100ms;
+}
+
+.Contact {
+    padding: 12rem 0;
+}
+
+/* Learn section */
+.Learn.active {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    z-index: 8;
+}
+
+/* Service section */
+.Services.active {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    z-index: 8;
+}
+
+/* About section */
+.About.active {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    z-index: 8;
+}
+
+/* Team section */
+.Team.active {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    z-index: 8;
+}
+
+.Contact.active {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    z-index: 8;
+}
+
+/* Learn section: welcome header */
+.welcome {
+    position: relative;
+    color: white;
+    font-size: 9em;
+    top: -150px;
+}
+
+.welcome #span-id {
+    display: block;
+    color: transparent;
+    font-weight: 900;
+    -webkit-text-stroke: 2px rgb(47, 47, 255);
+}
+
+.welcome u {
+    color: rgb(47, 47, 255);
+    font-weight: 700;
+}
+
+/* Learn section: 1st parallax div */
+.scroll1 {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 430px;
+    font-family: astroSpace;
+}
+
+/* Learn section: 2st parallax div */
+.scroll2 {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.scroll3 {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.scroll4 {
+    margin-top: 500px;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.scroll4 h2 {
+    background-image: linear-gradient(to right, rgb(47, 47, 255), pink 85%);
+    font-size: 60px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.scroll3 h2 {
+    background-image: linear-gradient(to right, rgb(47, 47, 255), pink 85%);
+    font-size: 60px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.scroll2 h2 {
+    background-image: linear-gradient(to right, rgb(47, 47, 255), pink 85%);
+    font-size: 60px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
+
+/* Learn section: courses */
+.courses {
+    color: rgb(17, 2, 103);
+    font-size: 3rem;
+    padding: 5rem;
+}
+
+/* Learn section: web development paragraph*/
+.web-dev-par {
+    margin: 100px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.par-4 {
+    margin: 100px;
+    margin-top: -40px;
+}
+
+.second-list {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.p-par {
+    padding: 60px;
+}
+
+ol {
+    list-style-type: decimal;
+    margin: 200px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    line-height: 1.5;
+}
+
+/* Learn section: c/c++ paragraph*/
+.c-cpp-par, .c-cpp-par2, .c-cpp-par3 {
+    margin: 100px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+/* Learn section: python paragraph*/
+.python-par, .python-par2, .python-par3 {
+    margin: 100px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+/* Registration paragraph */
+.register-par {
+    font-size: 23px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    background-color: transparent;
+    color: rgb(47, 47, 255);
+    border: 4px solid rgb(17, 2, 103);
+    border-radius: 4px;
+    padding: 0 15px;
+    margin-top: -3px;
+    cursor: pointer;
+    height: 32px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.15);
+}
+
+.btn:last-child {
+    margin-bottom: 90px;
+}
+
+#graphics-img-container {
+    position: relative;
+    height: 500px;
+}
+
+.graphics-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    z-index: -1;
+}
+
+.graphics-img-content {
+    position: absolute;
+}
+
+/* Service section: service heading */
+.our-services {
+    font-size: 60px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, rgb(222, 46, 69), rgb(170, 9, 36) 85%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: poppins;
+    font-weight: 900;
+}
+
+/* Service section: service paragraph */
+.services-par {
+    margin: 50px;
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+
+.project-link {
+    color: rgb(170, 9, 36);
+}
+
+.services-par-2 {
+    margin: 100px;
+    margin-bottom: 450px;
+    font-size: 22px;
+}
+
+.services-par-3 {
+    margin: 100px;
+    margin-bottom: 800px;
+    font-size: 22px;
+}
+
+.Services h3 {
+    font-family: poppins;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, rgb(222, 46, 69), rgb(170, 9, 36) 85%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Service section: services heading */
+.web-design, .graphics-design, .ui-ux-design, .content-writing {
+    font-family: poppins;
+    font-size: 60px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, rgb(222, 46, 69), rgb(170, 9, 36) 85%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
+
+.web-design {
+    background-image: url('img/pexels-steve-johnson-1266808.jpg');
+}
+
+.scroll2 .graphics-design {
+    background-image: url('img/pexels-zaksheuskaya-1616403.jpg');
+}
+
+.scroll2 .ui-ux-design {
+    background-image: url('img/pexels-mikhail-nilov-7676329.jpg');
+}
+
+#ui-ux-design {
+    height: 300px;
+    margin-bottom: 200px;
+}
+
+#content-writing {
+    height: 400px;
+}
+
+/* About section: about header */
+.about {
+    font-family: poppins;
+    font-size: 60px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, rgb(222, 48, 0), rgb(137, 34, 5));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
+
+/* About section: about paragraph */
+.about-par {
+    margin: 100px;
+    margin-bottom: 100px;
+    font-size: 22px;
+}
+
+.About b {
+    font-size: 24px;
+}
+
+.Team h1 {
+    background-image: linear-gradient(to right, rgb(185, 10, 185), rgb(91, 3, 91));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: cursive;
+}
+
+.purple {
+    background-image: linear-gradient(to right, rgb(185, 10, 185), rgb(91, 3, 91));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.h2-contact {
+    font-family: cursive;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, rgb(16, 124, 247), rgb(6, 64, 108));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-image: linear-gradient(to right, rgb(16, 124, 247), rgb(6, 64, 108));
+    width: 600px;
+    max-width: 600px;
+    height: 40px;
+    max-height: 40px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+textarea {
+    background-image: linear-gradient(to right, rgb(16, 124, 247), rgb(6, 64, 108));
+    width: 600px;
+    height: 200px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+.send-btn {
+    background-image: linear-gradient(to right, rgb(16, 124, 247), rgb(6, 64, 108));
+    width: 600px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .c-tech-header {
+        font-weight: 300px;
+        font-size: 1.5rem;
+        letter-spacing:4px;
+        margin-right: 1px;
+    }
+
+    header {
+        position: fixed;
+    }
+
+    header ul a, .link {
+        padding: 0.1rem 0.5rem;
+        font-weight: 250;
+        font-size: 0.4rem;
+        letter-spacing: 2px;
+    }
+
+    .welcome {
+        font-size: 2.8em;
+        top: -120px;
+    }
+
+    .scroll1 {
+        margin-bottom: 1px;
+    }
+
+    .scroll2 {
+        top: 650px;
+    }
+
+    .courses {
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+
+    .scroll2 h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .web-dev-par {
+        margin: 60px;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+    }
+
+    .c-cpp-par, .c-cpp-par2, .c-cpp-par3 {
+        margin: 60px;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+    }
+
+    .python-par, .python-par2, .python-par3 {
+        margin: 60px;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+    }
+
+    .register-par {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .our-services {
+        font-size: 30px;
+        margin-top: -150px;
+        margin-bottom: 50px;
+        font-weight: 600;
+    }
+
+    .services-par {
+        margin: 50px;
+        margin-bottom: 50px;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+    }
+
+    .Services h3 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .web-design, .graphics-design, .ui-ux-design, .content-writing {
+        font-size: 30px;
+        margin-bottom: 50px;
+        font-weight: 600;
+    }
+
+    .scroll2 .graphics-design {
+        background-image: url('img/pexels-zaksheuskaya-1616403.jpg');
+        font-size: 40px;
+    }
+
+    .services-par-2 {
+        margin: 60px;
+        margin-bottom: 2px;
+        font-size: 16px;
+    }
+
+    .services-par-3 {
+        margin: 60px;
+        font-size: 16px;
+    }
+
+    #ui-ux-design {
+        height: 300px;
+        margin-top: 1000px;
+        margin-bottom: 600px;
+    }
+
+    #content-writing {
+        height: 400px;
+        margin-top: 1660px;
+    }
+
+    .scroll3 h2, .scroll4 h2 {
+        font-size: 30px;
+    }
+
+    .about {
+        font-size: 40px;
+        margin-top: -150px;
+        margin-bottom: 50px;
+        font-weight: 600;
+    }
+
+    .About b {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .about-par {
+        margin: 60px;
+        margin-bottom: 100px;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+    }
+
+    input {
+        width: 300px;
+    }
+
+    textarea {
+        width: 300px;
+    }
+
+    .send-btn {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 912px) and (max-width: 1200px) {
+    .welcome {
+        top: -50px;
+    }
+
+    .scroll1 {
+        margin-bottom: -200px;
+    }
+}
+
+@media screen  and (min-width: 1024px) and (min-height: 600px) and (max-width: 1300px) and (max-height: 800px) {
+    
+    .welcome {
+        top: -120px;
+    }
+    
+    .scroll1 {
+        margin-bottom: 460px;
+    }
+}

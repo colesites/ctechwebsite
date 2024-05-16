@@ -1,0 +1,295 @@
+:root {
+    font-size: 20px;
+    box-sizing: inherit;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font: 1em/1.618 Inter, sans-serif;
+    color: #224;
+    background-image: url(img/purplevr.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Header nav bar */
+header nav {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a, .link {
+    text-decoration: none;
+    color: #224;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+header nav .link.active {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+}
+
+.web-design, .graphic, .ui-ux, .content {
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    transition: transform 800ms ease-in-out 100ms;
+}
+
+.web-design.active, .graphic.active, .ui-ux.active, .content.active{
+    position: relative;
+    padding-top: 8rem;
+    padding-left: 5rem;
+    opacity: 1;
+    z-index: 8;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.circle {
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-top: -20px;
+    margin-left: -10px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(40px);
+}
+
+.circle-two {
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-top: 300px;
+    margin-left: 290px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(40px);
+}
+
+.circle-three {
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-top: -20px;
+    margin-left: 340px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(40px);
+}
+
+.circle-four {
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-top: 300px;
+    margin-left: 640px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(40px);
+}
+
+  .circle-five {
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-top: -20px;
+    margin-left: 690px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(40px);
+}
+
+.circle-six {
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-top: 300px;
+    margin-left: 1000px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(40px);
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, .45);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(40px);
+  }
+
+.card-two {
+    width: 250px;
+    height: 250px;
+    margin-left: 30px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(40px);
+  }
+
+.card-three {
+    width: 250px;
+    height: 250px;
+    margin-left: 30px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, .45);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(40px);
+  }
+
+.card-four {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, .45);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(40px);
+  }
+
+.card-five {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(40px);
+  }
+
+.card-six {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, .45);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(40px);
+  }
+
+.card:hover, .card-two:hover, .card-three:hover, .card-four:hover, .card-five:hover, .card-six:hover{
+    transform: scale(1.02);
+    transition: transform 800ms ease-in-out 100ms;
+}
+
+.arrow {
+    position: absolute;
+    transform: scale(0.2) rotate(180deg);
+    width: 120px;
+    height: 120px;
+    top: 202.5px;
+    right: 30px;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    color: blueviolet;
+    border: 3px solid blueviolet;
+    border-radius: 40px;
+    font-size: 40px;
+}
+
+.odd-btn {
+    background: white;
+    border: 3px solid white;
+}
+
+.purple-link {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.purple-link:visited, .purple-link:hover, .purple-link:active {
+    text-decoration: none;
+    color: blueviolet;
+}
+
