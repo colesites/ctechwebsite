@@ -1,0 +1,19 @@
+{
+  "liveServer.settings.port": 5501,
+  "cSpell.language": "en,en-GB,en-US",
+  "cSpell.enableFiletypes": [
+    "cpp_embedded_latex",
+    "dart",
+    "dockerfile",
+    "git-rebase",
+    "objective-c",
+    "objective-cpp",
+    "perl6",
+    "powershell",
+    "r",
+    "ruby",
+    "sql",
+    "tailwindcss",
+    "xml"
+  ]
+}
